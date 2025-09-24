@@ -36,6 +36,9 @@ def main():
         show_document_validator()
     elif menu_selection == "Risk Alerts":
         show_risk_alerts()
+    
+    # Ajouter un message de débogage pour voir quelle page est sélectionnée
+    st.sidebar.markdown(f"**Current page:** {menu_selection}")
 
 if __name__ == "__main__":
     main()

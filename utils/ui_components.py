@@ -38,14 +38,17 @@ def sidebar_menu():
         menu_options = ["Dashboard", "Evaluator Matching", "Document Validator", "Risk Alerts"]
         icons = ["📊", "👥", "📄", "⚠️"]
         
-        menu_selection = None
-        for i, option in enumerate(menu_options):
-            if st.sidebar.button(f"{icons[i]} {option}"):
-                menu_selection = option
+        # Stocker la sélection dans la session state si elle n'existe pas encore
+        if 'menu_selection' not in st.session_state:
+            st.session_state.menu_selection = "Dashboard"
         
-        # Si aucun bouton n'est cliqué, afficher le tableau de bord par défaut
-        if menu_selection is None:
-            menu_selection = "Dashboard"
+        # Créer les boutons de navigation
+        for i, option in enumerate(menu_options):
+            if st.sidebar.button(f"{icons[i]} {option}", key=f"nav_{option}"):
+                st.session_state.menu_selection = option
+        
+        # Récupérer la sélection actuelle
+        menu_selection = st.session_state.menu_selection
         
         st.sidebar.markdown("---")
         

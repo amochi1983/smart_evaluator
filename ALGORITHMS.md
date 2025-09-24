@@ -1,117 +1,129 @@
-# Smart Evaluator Assistant - AI Algorithms
+# Smart Evaluator Assistant - Algorithmes d'IA
 
-This document describes the artificial intelligence algorithms that will be implemented in the final version of the Smart Evaluator Assistant. In the current prototype, these algorithms are simulated with dummy data.
+Ce document décrit les algorithmes d'intelligence artificielle qui seront implémentés dans la version finale du Smart Evaluator Assistant. Dans le prototype actuel, ces algorithmes sont simulés avec des données factices.
 
-## 1. Document Validation Algorithm
+## 1. Algorithme de Validation de Documents
 
-### Objective
-Automatically analyze accreditation documents to check compliance with standards and identify missing information.
+### Objectif
+Analyser automatiquement les documents d'accréditation pour vérifier leur conformité aux normes et identifier les informations manquantes.
 
-### Technical Approach
-- **Architecture**: NLP pipeline based on transformer models (BERT/AraBERT)
-- **Components**:
-  - **Structure Extractor**: CNN model to identify document sections
-  - **Entity Extractor**: Named Entity Recognition (NER) for extracting key information
-  - **Compliance Checker**: Fine-tuned classifier on accreditation standards
-  - **Missing Information Detector**: Comparison model against complete document templates
+### Approche Technique
+- **Architecture**: Pipeline NLP basé sur des modèles de transformers (BERT/AraBERT)
+- **Composants**:
+  - **Extracteur de Structure**: Modèle CNN pour identifier les sections du document
+  - **Extracteur d'Entités**: NER (Named Entity Recognition) pour extraire les informations clés
+  - **Vérificateur de Conformité**: Modèle de classification fine-tuné sur les normes d'accréditation
+  - **Détecteur d'Informations Manquantes**: Modèle de comparaison avec des templates de documents complets
 
-### Training Data
-- 5000+ annotated accreditation documents
-- Full ISO standards (17025, 15189, 17020, etc.)
-- Examples of compliant and non-compliant documents
+### Données d'Entraînement
+- 5000+ documents d'accréditation annotés
+- Normes ISO complètes (17025, 15189, 17020, etc.)
+- Exemples de documents conformes et non conformes
 
-### Performance Metrics
-- Section detection accuracy: >95%
-- Entity extraction accuracy: >90%
-- Compliance classification accuracy: >85%
-- Missing information recall: >90%
+### Métriques de Performance
+- Précision de détection des sections: >95%
+- Précision d'extraction d'entités: >90%
+- Précision de classification de conformité: >85%
+- Rappel des informations manquantes: >90%
 
-### Language Support
-- Arabic (priority)
-- English
+### Support Linguistique
+- Arabe (prioritaire)
+- Anglais
 
-## 2. Evaluator Matching Algorithm
+## 2. Algorithme de Correspondance des Évaluateurs
 
-### Objective
-Automatically assign the most qualified evaluators to accreditation requests based on multiple criteria.
+### Objectif
+Associer automatiquement les évaluateurs les plus qualifiés aux demandes d'accréditation en fonction de multiples critères.
 
-### Technical Approach
-- **Architecture**: Hybrid recommender system
-- **Components**:
-  - **Content-Based Filtering**: Match between evaluator expertise and document requirements
-  - **Collaborative Filtering**: Learn from past successful assignments
-  - **Constraint Optimization**: Consider availability, location, workload balance
-  - **Conflict of Interest Detection**: Graph analysis and NLP on affiliations
+### Approche Technique
+- **Architecture**: Système de recommandation hybride
+- **Composants**:
+  - **Filtrage Basé sur le Contenu**: Correspondance entre expertise des évaluateurs et exigences des documents
+  - **Filtrage Collaboratif**: Apprentissage à partir des affectations précédentes réussies
+  - **Optimisation sous Contraintes**: Prise en compte de la disponibilité, de la localisation et de la charge de travail
+  - **Détection de Conflits d'Intérêts**: Analyse de graphe de relations et NLP sur les affiliations
 
-### Training Data
-- History of evaluator assignments (3+ years)
-- Detailed evaluator profiles (expertise, experience, performance)
-- Feedback from past evaluations
+### Données d'Entraînement
+- Historique des affectations d'évaluateurs (3+ années)
+- Profils détaillés des évaluateurs (expertise, expérience, performance)
+- Feedback sur les évaluations précédentes
 
-### Performance Metrics
-- Matching accuracy: >80%
-- Evaluator satisfaction rate: >85%
-- Conflict detection rate: >95%
-- Workload balance: standard deviation <15%
+### Métriques de Performance
+- Précision des correspondances: >80%
+- Taux de satisfaction des évaluateurs: >85%
+- Taux de détection des conflits d'intérêts: >95%
+- Équilibrage de charge: écart-type <15% entre les charges de travail
 
-## 3. Risk Scoring Algorithm
+## 3. Algorithme de Notation des Risques
 
-### Objective
-Proactively identify high-risk accreditation requests requiring special attention.
+### Objectif
+Identifier proactivement les demandes d'accréditation à haut risque nécessitant une attention particulière.
 
-### Technical Approach
-- **Architecture**: Ensemble predictive models (XGBoost + Random Forest)
-- **Components**:
-  - **Feature Engineering**: 50+ risk indicators
-  - **Ensemble Model**: Combine classifiers for robustness
-  - **Temporal Analysis**: LSTM for detecting trends in historical data
-  - **Anomaly Detection**: Isolation Forest to identify unusual cases
+### Approche Technique
+- **Architecture**: Ensemble de modèles prédictifs (XGBoost + Random Forest)
+- **Composants**:
+  - **Ingénierie de Caractéristiques**: Extraction de 50+ indicateurs de risque
+  - **Modèle d'Ensemble**: Combinaison de plusieurs classifieurs pour la robustesse
+  - **Analyse Temporelle**: LSTM pour détecter les tendances dans les données historiques
+  - **Détection d'Anomalies**: Isolation Forest pour identifier les cas inhabituels
 
-### Training Data
-- Accreditation request history (success/failure)
-- Issues identified in past evaluations
-- Performance metrics of accredited organizations
+### Données d'Entraînement
+- Historique des demandes d'accréditation (succès/échec)
+- Problèmes identifiés lors des évaluations précédentes
+- Métriques de performance des organisations accréditées
 
-### Performance Metrics
-- Risk prediction accuracy: >80%
-- High-risk recall: >90%
+### Métriques de Performance
+- Précision de prédiction des risques: >80%
+- Rappel des cas à haut risque: >90%
 - AUC-ROC: >0.85
-- False positive rate: <10%
+- Taux de faux positifs: <10%
 
-## 4. Bias Mitigation System
+## 4. Système de Mitigation des Biais
 
-### Objective
-Ensure that system algorithms are fair and do not perpetuate existing biases.
+### Objectif
+Garantir que les algorithmes du système sont équitables et ne perpétuent pas de biais existants.
 
-### Technical Approach
-- **Architecture**: Bias monitoring and correction pipeline
-- **Components**:
-  - **Bias Detection**: Fairness metrics across groups
-  - **Resampling Techniques**: Balance training data
-  - **Fair Learning**: Integrate fairness constraints into loss functions
-  - **Explainability**: Generate explanations for algorithmic decisions
+### Approche Technique
+- **Architecture**: Pipeline de surveillance et correction des biais
+- **Composants**:
+  - **Détection de Biais**: Calcul de métriques d'équité sur différents groupes
+  - **Techniques de Rééchantillonnage**: Équilibrage des données d'entraînement
+  - **Apprentissage Équitable**: Contraintes d'équité intégrées dans les fonctions de perte
+  - **Explicabilité**: Génération d'explications pour les décisions algorithmiques
 
-### Training Data
-- Demographic data of organizations and evaluators (anonymized)
-- Accreditation decision history
+### Données d'Entraînement
+- Données démographiques des organisations et évaluateurs (anonymisées)
+- Historique des décisions d'accréditation
 
-### Performance Metrics
-- Impact disparity: <5%
-- Equal opportunity: >95%
-- Decision transparency: explainability score >80%
+### Métriques de Performance
+- Disparité d'impact: <5%
+- Égalité des chances: >95%
+- Transparence des décisions: score d'explicabilité >80%
 
-## Implementation Plan
+## Plan d'Implémentation
 
-- **Phase 1 (3 months)**: Data collection & preparation, baseline models, initial evaluation  
-- **Phase 2 (2 months)**: Fine-tuning, integration tests, real-world evaluation  
-- **Phase 3 (1 month)**: Gradual deployment, monitoring, user training  
+### Phase 1: Développement des Modèles (3 mois)
+- Collecte et préparation des données
+- Développement des modèles de base
+- Évaluation des performances initiales
 
-## Ethical & Governance Considerations
+### Phase 2: Optimisation et Tests (2 mois)
+- Fine-tuning des modèles
+- Tests d'intégration
+- Évaluation des performances en conditions réelles
 
-- **Transparency**: Full documentation of algorithms and limits  
-- **Human Oversight**: Critical decisions always validated by human experts  
-- **Confidentiality**: Secure handling of sensitive data  
-- **Continuous Improvement**: Regular review to correct identified biases  
+### Phase 3: Déploiement et Surveillance (1 mois)
+- Déploiement progressif des algorithmes
+- Mise en place d'un système de surveillance des performances
+- Formation des utilisateurs
+
+## Considérations Éthiques et de Gouvernance
+
+- **Transparence**: Documentation complète des algorithmes et de leurs limites
+- **Supervision Humaine**: Décisions critiques toujours validées par des experts humains
+- **Confidentialité**: Traitement sécurisé des données sensibles
+- **Amélioration Continue**: Révision régulière des algorithmes pour corriger les biais identifiés
 
 ---
-*Note: This document describes algorithms planned for the final version. The current prototype uses simplified simulations with dummy data.*
+
+*Note: Ce document décrit les algorithmes qui seront implémentés dans la version finale. Le prototype actuel utilise des simulations simplifiées de ces algorithmes avec des données factices.*
