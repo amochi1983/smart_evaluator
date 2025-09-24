@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly
+matplotlib
+altair
+PyPDF2
+numpy
+pillow
