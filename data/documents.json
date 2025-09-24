@@ -1,0 +1,273 @@
+[
+  {
+    "id": "DOC-001",
+    "title": "Accreditation Application 1",
+    "type": "ISO 17065",
+    "organization": "Organization 1",
+    "submission_date": "2025-09-18",
+    "compliance_score": 82,
+    "status": "In Progress",
+    "missing_sections": [
+      "Personnel Records"
+    ],
+    "assigned_evaluator": "EVA-001",
+    "review_comments": "Review comments for document 1",
+    "arabic": {
+      "title": "طلب اعتماد 1",
+      "organization": "مؤسسة 1",
+      "status": "قيد التنفيذ"
+    }
+  },
+  {
+    "id": "DOC-002",
+    "title": "Accreditation Application 2",
+    "type": "ISO 17065",
+    "organization": "Organization 2",
+    "submission_date": "2025-04-27",
+    "compliance_score": 90,
+    "status": "Approved",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-004",
+    "review_comments": "Review comments for document 2",
+    "arabic": {
+      "title": "طلب اعتماد 2",
+      "organization": "مؤسسة 2",
+      "status": "معتمد"
+    }
+  },
+  {
+    "id": "DOC-003",
+    "title": "Accreditation Application 3",
+    "type": "ISO 17020",
+    "organization": "Organization 3",
+    "submission_date": "2025-06-23",
+    "compliance_score": 79,
+    "status": "In Progress",
+    "missing_sections": [
+      "Quality Manual",
+      "Personnel Records"
+    ],
+    "assigned_evaluator": "EVA-008",
+    "review_comments": "Review comments for document 3",
+    "arabic": {
+      "title": "طلب اعتماد 3",
+      "organization": "مؤسسة 3",
+      "status": "قيد التنفيذ"
+    }
+  },
+  {
+    "id": "DOC-004",
+    "title": "Accreditation Application 4",
+    "type": "ISO 15189",
+    "organization": "Organization 4",
+    "submission_date": "2025-05-26",
+    "compliance_score": 69,
+    "status": "Pending",
+    "missing_sections": [],
+    "assigned_evaluator": null,
+    "review_comments": "",
+    "arabic": {
+      "title": "طلب اعتماد 4",
+      "organization": "مؤسسة 4",
+      "status": "قيد الانتظار"
+    }
+  },
+  {
+    "id": "DOC-005",
+    "title": "Accreditation Application 5",
+    "type": "ISO 17020",
+    "organization": "Organization 5",
+    "submission_date": "2025-07-14",
+    "compliance_score": 92,
+    "status": "Approved",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-007",
+    "review_comments": "Review comments for document 5",
+    "arabic": {
+      "title": "طلب اعتماد 5",
+      "organization": "مؤسسة 5",
+      "status": "معتمد"
+    }
+  },
+  {
+    "id": "DOC-006",
+    "title": "Accreditation Application 6",
+    "type": "ISO 17043",
+    "organization": "Organization 6",
+    "submission_date": "2025-04-16",
+    "compliance_score": 66,
+    "status": "Pending",
+    "missing_sections": [],
+    "assigned_evaluator": null,
+    "review_comments": "",
+    "arabic": {
+      "title": "طلب اعتماد 6",
+      "organization": "مؤسسة 6",
+      "status": "قيد الانتظار"
+    }
+  },
+  {
+    "id": "DOC-007",
+    "title": "Accreditation Application 7",
+    "type": "ISO 15189",
+    "organization": "Organization 7",
+    "submission_date": "2025-04-10",
+    "compliance_score": 66,
+    "status": "Rejected",
+    "missing_sections": [
+      "Personnel Records",
+      "Quality Manual"
+    ],
+    "assigned_evaluator": "EVA-009",
+    "review_comments": "Review comments for document 7",
+    "arabic": {
+      "title": "طلب اعتماد 7",
+      "organization": "مؤسسة 7",
+      "status": "مرفوض"
+    }
+  },
+  {
+    "id": "DOC-008",
+    "title": "Accreditation Application 8",
+    "type": "ISO 17020",
+    "organization": "Organization 8",
+    "submission_date": "2025-09-03",
+    "compliance_score": 93,
+    "status": "Approved",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-006",
+    "review_comments": "Review comments for document 8",
+    "arabic": {
+      "title": "طلب اعتماد 8",
+      "organization": "مؤسسة 8",
+      "status": "معتمد"
+    }
+  },
+  {
+    "id": "DOC-009",
+    "title": "Accreditation Application 9",
+    "type": "ISO 17025",
+    "organization": "Organization 9",
+    "submission_date": "2025-04-04",
+    "compliance_score": 93,
+    "status": "Approved",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-006",
+    "review_comments": "Review comments for document 9",
+    "arabic": {
+      "title": "طلب اعتماد 9",
+      "organization": "مؤسسة 9",
+      "status": "معتمد"
+    }
+  },
+  {
+    "id": "DOC-010",
+    "title": "Accreditation Application 10",
+    "type": "ISO 17043",
+    "organization": "Organization 10",
+    "submission_date": "2025-04-15",
+    "compliance_score": 97,
+    "status": "Approved",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-005",
+    "review_comments": "Review comments for document 10",
+    "arabic": {
+      "title": "طلب اعتماد 10",
+      "organization": "مؤسسة 10",
+      "status": "معتمد"
+    }
+  },
+  {
+    "id": "DOC-011",
+    "title": "Accreditation Application 11",
+    "type": "ISO 17043",
+    "organization": "Organization 11",
+    "submission_date": "2025-06-21",
+    "compliance_score": 96,
+    "status": "Approved",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-001",
+    "review_comments": "Review comments for document 11",
+    "arabic": {
+      "title": "طلب اعتماد 11",
+      "organization": "مؤسسة 11",
+      "status": "معتمد"
+    }
+  },
+  {
+    "id": "DOC-012",
+    "title": "Accreditation Application 12",
+    "type": "ISO 17025",
+    "organization": "Organization 12",
+    "submission_date": "2025-08-24",
+    "compliance_score": 71,
+    "status": "Pending",
+    "missing_sections": [
+      "Quality Manual",
+      "Equipment Calibration",
+      "Personnel Records"
+    ],
+    "assigned_evaluator": null,
+    "review_comments": "",
+    "arabic": {
+      "title": "طلب اعتماد 12",
+      "organization": "مؤسسة 12",
+      "status": "قيد الانتظار"
+    }
+  },
+  {
+    "id": "DOC-013",
+    "title": "Accreditation Application 13",
+    "type": "ISO 15189",
+    "organization": "Organization 13",
+    "submission_date": "2025-08-11",
+    "compliance_score": 87,
+    "status": "In Progress",
+    "missing_sections": [
+      "Technical Records",
+      "Quality Manual",
+      "Personnel Records"
+    ],
+    "assigned_evaluator": "EVA-005",
+    "review_comments": "Review comments for document 13",
+    "arabic": {
+      "title": "طلب اعتماد 13",
+      "organization": "مؤسسة 13",
+      "status": "قيد التنفيذ"
+    }
+  },
+  {
+    "id": "DOC-014",
+    "title": "Accreditation Application 14",
+    "type": "ISO 17043",
+    "organization": "Organization 14",
+    "submission_date": "2025-09-01",
+    "compliance_score": 84,
+    "status": "In Progress",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-009",
+    "review_comments": "Review comments for document 14",
+    "arabic": {
+      "title": "طلب اعتماد 14",
+      "organization": "مؤسسة 14",
+      "status": "قيد التنفيذ"
+    }
+  },
+  {
+    "id": "DOC-015",
+    "title": "Accreditation Application 15",
+    "type": "ISO 15189",
+    "organization": "Organization 15",
+    "submission_date": "2025-05-09",
+    "compliance_score": 76,
+    "status": "In Progress",
+    "missing_sections": [],
+    "assigned_evaluator": "EVA-008",
+    "review_comments": "Review comments for document 15",
+    "arabic": {
+      "title": "طلب اعتماد 15",
+      "organization": "مؤسسة 15",
+      "status": "قيد التنفيذ"
+    }
+  }
+]
